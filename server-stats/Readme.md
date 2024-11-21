@@ -13,15 +13,10 @@
     curl -O https://github.com/AdityaPGit/roadmap.sh-devops/blob/main/server-stats/server-stats.sh 
 
 ### 2. Add execution permissions
-    ```
     chmod +x server-stats.sh
-    ```
 
 ### 3. Execute the file
-
-    ```
     ./serverstats.sh
-    ```
 
 ### Here's how the result should look
 
