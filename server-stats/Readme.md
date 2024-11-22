@@ -16,7 +16,7 @@
     chmod +x server-stats.sh
 
 ### 3. Execute the file
-    ./serverstats.sh
+    ./server-stats.sh
 
 ### Here's how the result should look
 

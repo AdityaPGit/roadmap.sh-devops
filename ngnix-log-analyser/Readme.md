@@ -7,14 +7,17 @@
 
 ## How to use it?
 
-### 1. Download the bash file and the log file
+### 1. Download the bash file
 
-    curl -O "https://raw.githubusercontent.com/AdityaPGit/roadmap.sh-devops/refs/heads/main/ngnix-log-analyser/ngnix-log-analyser.sh" "https://raw.githubusercontent.com/AdityaPGit/roadmap.sh-devops/refs/heads/main/ngnix-log-analyser/ngnix.log"
+    curl -O "https://raw.githubusercontent.com/AdityaPGit/roadmap.sh-devops/refs/heads/main/ngnix-log-analyser/ngnix-log-analyser.sh" 
 
-### 2. Add execution permissions
+### 2. Download the log file    
+    curl -O "https://raw.githubusercontent.com/AdityaPGit/roadmap.sh-devops/refs/heads/main/ngnix-log-analyser/ngnix.log"
+
+### 3. Add execution permissions
     chmod +x ngnix-log-analyser.sh
 
-### 3. Execute the file
+### 4. Execute the file
     ./ngnix-log-analyser.sh
 
 ### Here's how the result should look
