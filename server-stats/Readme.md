@@ -10,7 +10,7 @@
 
 ### 1. Download the file
 
-    curl -O https://github.com/AdityaPGit/roadmap.sh-devops/blob/main/server-stats/server-stats.sh 
+    curl -O https://raw.githubusercontent.com/AdityaPGit/roadmap.sh-devops/refs/heads/main/server-stats/server-stats.sh
 
 ### 2. Add execution permissions
     chmod +x server-stats.sh

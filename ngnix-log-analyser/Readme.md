@@ -9,7 +9,7 @@
 
 ### 1. Download the bash file and the log file
 
-    curl -O "https://github.com/AdityaPGit/roadmap.sh-devops/blob/main/ngnix-log-analyser/ngnix-log-analyser.sh" "https://github.com/AdityaPGit/roadmap.sh-devops/blob/main/ngnix-log-analyser/ngnix.log"
+    curl -O "https://raw.githubusercontent.com/AdityaPGit/roadmap.sh-devops/refs/heads/main/ngnix-log-analyser/ngnix-log-analyser.sh" "https://raw.githubusercontent.com/AdityaPGit/roadmap.sh-devops/refs/heads/main/ngnix-log-analyser/ngnix.log"
 
 ### 2. Add execution permissions
     chmod +x ngnix-log-analyser.sh

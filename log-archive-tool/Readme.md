@@ -1,4 +1,4 @@
-# Server Stats Analyser
+# Log Archive Tool
 
 **Compresses the log files on a linux machine and stores them in the argument's path in the following format:**
 
@@ -8,7 +8,7 @@ log_archive_ddmmyy_hhmmss.tar.gz
 
 ### 1. Download the file
 
-    curl -O https://github.com/AdityaPGit/roadmap.sh-devops/blob/main/log-archive-tool/server-stats.sh 
+    curl -O https://raw.githubusercontent.com/AdityaPGit/roadmap.sh-devops/refs/heads/main/log-archive-tool/log-archive.sh
 
 ### 2. Add execution permissions
     chmod +x server-stats.sh
