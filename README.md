@@ -10,3 +10,5 @@ This repository contains solutions for the projects in the [roadmap.sh DevOps Ro
 3) [Nginx Log Analyser](https://roadmap.sh/projects/nginx-log-analyser) | [Solution](/ngnix-log-analyser/ngnix-log-analyser.sh)
 
 4) [GitHub Pages Deployment](https://roadmap.sh/projects/github-actions-deployment-workflow) | [Solution](https://github.com/AdityaPGit/github-actions-cd)
+
+5) [SSH Remote Server Setup](https://roadmap.sh/projects/ssh-remote-server-setup) | [Solution](/ssh-remote-server-setup/)
