@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0e0e0e; /* Dark background */
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.container h1 {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  z-index: 10;
+}
+
+.animation-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* General meteor styling */
+.meteor {
+  position: absolute;
+  width: 2px; /* Width for line effect */
+  height: 80px; /* Height for line effect */
+  background: rgba(255, 255, 255, 0.8); /* White line effect */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Increased glow */
+  animation: meteor-fall 3s infinite linear; /* Removed 'forwards' */
+  pointer-events: none;
+  z-index: 0; /* Prevent stacking issues */
+}
+
+/* Randomizing meteor starting positions and animation delays */
+.meteor:nth-child(1) {
+  left: -10%; /* Start off-screen to the left */
+  animation-delay: 0s;
+}
+
+.meteor:nth-child(2) {
+  left: -20%; /* Start off-screen to the left */
+  animation-delay: 0.7s;
+}
+
+.meteor:nth-child(3) {
+  left: -30%; /* Start off-screen to the left */
+  animation-delay: 1.2s;
+}
+
+.meteor:nth-child(4) {
+  left: -40%; /* Start off-screen to the left */
+  animation-delay: 0.5s;
+}
+
+.meteor:nth-child(5) {
+  left: -50%; /* Start off-screen to the left */
+  animation-delay: 1s;
+}
+
+.meteor:nth-child(6) {
+  left: -60%; /* Start off-screen to the left */
+  animation-delay: 1.5s;
+}
+
+.meteor:nth-child(7) {
+  left: -70%; /* Start off-screen to the left */
+  animation-delay: 2s;
+}
+
+.meteor:nth-child(8) {
+  top: 10%; /* East starting point */
+  left: 110%; /* Start off-screen to the right */
+  transform: rotate(120deg); /* Diagonal flow */
+  animation-delay: 0.3s;
+}
+
+.meteor:nth-child(9) {
+  top: 20%;
+  left: 120%; /* Start off-screen to the right */
+  transform: rotate(120deg);
+  animation-delay: 0.9s;
+}
+
+.meteor:nth-child(10) {
+  top: 30%;
+  left: 130%; /* Start off-screen to the right */
+  transform: rotate(120deg);
+  animation-delay: 1.5s;
+}
+
+.meteor:nth-child(11) {
+  top: 40%;
+  left: 140%; /* Start off-screen to the right */
+  transform: rotate(120deg);
+  animation-delay: 2.1s;
+}
+
+.meteor:nth-child(12) {
+  top: 50%;
+  left: 150%; /* Start off-screen to the right */
+  transform: rotate(120deg);
+  animation-delay: 2.7s;
+}
+
+/* Additional meteors for more coverage */
+.meteor:nth-child(13) {
+  left: -15%; /* Start off-screen to the left */
+  animation-delay: 0.4s;
+}
+
+.meteor:nth-child(14) {
+  left: -25%; /* Start off-screen to the left */
+  animation-delay: 1.0s;
+}
+
+.meteor:nth-child(15) {
+  left: -35%; /* Start off-screen to the left */
+  animation-delay: 1.6s;
+}
+
+.meteor:nth-child(16) {
+  left: -45%; /* Start off-screen to the left */
+  animation-delay: 2.2s;
+}
+
+.meteor:nth-child(17) {
+  left: -55%; /* Start off-screen to the left */
+  animation-delay: 2.8s;
+}
+
+.meteor:nth-child(18) {
+  top: 5%; /* New meteor starting point */
+  left: 110%; /* Start off-screen to the right */
+  transform: rotate(120deg);
+  animation-delay: 0.5s;
+}
+
+.meteor:nth-child(19) {
+  top: 15%; /* New meteor starting point */
+  left: 120%; /* Start off-screen to the right */
+  transform: rotate(120deg);
+  animation-delay: 1.1s;
+}
+
+.meteor:nth-child(20) {
+  top: 25%; /* New meteor starting point */
+  left: 130%; /* Start off-screen to the right */
+  transform: rotate(120deg);
+  animation-delay: 1.7s;
+}
+
+/* New meteors traveling from north to west */
+.meteor.north-to-west {
+  top: -10%; /* Start off-screen at the top */
+  left: 50%; /* Centered horizontally */
+  transform: rotate(240deg); /* Angle for north to west */
+}
+
+/* Additional meteors for north to west */
+.meteor:nth-child(21) {
+  animation-delay: 0.4s;
+}
+
+.meteor:nth-child(22) {
+  animation-delay: 1.0s;
+}
+
+.meteor:nth-child(23) {
+  animation-delay: 1.6s;
+}
+
+/* Meteor animation */
+@keyframes meteor-fall {
+  0% {
+    transform: translate(0, 0) rotate(60deg); /* Start from the initial position */
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+    transform: translate(-150vw, 150vh) rotate(60deg); /* Falling diagonally downward */
+  }
+  100% {
+    transform: translate(-200vw, 200vh) rotate(60deg);
+    opacity: 0; /* Fade out at the end */
+  }
+}
+
+/* Meteor animation for north to west */
+@keyframes meteor-fall-north-to-west {
+  0% {
+    transform: translate(0, 0) rotate(240deg); /* Start from the initial position */
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+    transform: translate(-150vw, -150vh) rotate(240deg); /* Falling diagonally northwest */
+  }
+  100% {
+    transform: translate(-200vw, -200vh) rotate(240deg);
+    opacity: 0; /* Fade out at the end */
+  }
+}
+
+/* East-to-south animation (slightly steeper angle) */
+@keyframes east-to-south {
+  0% {
+    transform: translate(0, 0) rotate(120deg); /* East-to-south diagonal */
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+    transform: translate(-150vw, 150vh) rotate(120deg); /* Falling down and westward */
+  }
+  100% {
+    transform: translate(-200vw, 200vh) rotate(120deg);
+    opacity: 0;
+  }
+}
